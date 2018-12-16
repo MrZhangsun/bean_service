@@ -7,6 +7,7 @@ import top.zhangsun.bean.config.UrlMapping;
 import top.zhangsun.bean.exception.ClientException;
 import top.zhangsun.bean.pojo.dto.ResultDTO;
 import top.zhangsun.bean.pojo.form.ActivityForm;
+import top.zhangsun.bean.pojo.form.ActivitySearchForm;
 import top.zhangsun.bean.pojo.vo.ActivityVO;
 import top.zhangsun.bean.service.api.ActivityService;
 
@@ -62,8 +63,8 @@ public class ActivityController {
      * @return activity list
      */
     @GetMapping(UrlMapping.ACTIVITIES)
-    public ResultDTO findAll() {
-        List<ActivityVO> all = activityService.findAll();
+    public ResultDTO findAll(ActivitySearchForm searchForm) {
+        List<ActivityVO> all = activityService.findAll(searchForm);
         return new ResultDTO<>().ok(all);
     }
 

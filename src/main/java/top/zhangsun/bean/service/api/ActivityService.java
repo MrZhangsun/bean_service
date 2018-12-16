@@ -1,6 +1,7 @@
 package top.zhangsun.bean.service.api;
 
 import top.zhangsun.bean.pojo.form.ActivityForm;
+import top.zhangsun.bean.pojo.form.ActivitySearchForm;
 import top.zhangsun.bean.pojo.vo.ActivityVO;
 
 import java.util.List;
@@ -37,7 +38,8 @@ public interface ActivityService {
     /**
      * Find all activities
      *
+     * @param searchForm search conditions
      * @return activity list
      */
-    List<ActivityVO> findAll();
+    List<ActivityVO> findAll(ActivitySearchForm searchForm);
 }

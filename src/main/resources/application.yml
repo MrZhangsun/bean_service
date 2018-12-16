@@ -4,6 +4,16 @@ spring:
     username: xdm57692360
     password: Root1024
     driver-class-name: com.mysql.jdbc.Driver
+    ##  Hikari 连接池配置 ------ 详细配置请访问：https://github.com/brettwooldridge/HikariCP
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 180000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: GrownBeanHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
 
 logging:
   level:

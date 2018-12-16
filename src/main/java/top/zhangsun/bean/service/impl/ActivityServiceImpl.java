@@ -1,14 +1,17 @@
 package top.zhangsun.bean.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import top.zhangsun.bean.exception.ClientException;
 import top.zhangsun.bean.mapper.ActivityEntityMapper;
 import top.zhangsun.bean.pojo.entity.ActivityEntity;
 import top.zhangsun.bean.pojo.entity.ActivityEntityExample;
 import top.zhangsun.bean.pojo.form.ActivityForm;
+import top.zhangsun.bean.pojo.form.ActivitySearchForm;
 import top.zhangsun.bean.pojo.vo.ActivityVO;
 import top.zhangsun.bean.service.api.ActivityService;
 
@@ -99,13 +102,35 @@ public class ActivityServiceImpl implements ActivityService {
     }
 
     /**
-     * @see ActivityService#findAll()
+     * @see ActivityService#findAll(ActivitySearchForm)
      * @return Activity list
      */
     @Override
-    public List<ActivityVO> findAll() {
+    public List<ActivityVO> findAll(ActivitySearchForm searchForm) {
         ActivityEntityExample example = new ActivityEntityExample();
-        example.createCriteria().andDeleteEqualTo(Boolean.FALSE);
+        ActivityEntityExample.Criteria criteria = example.createCriteria();
+        criteria.andDeleteEqualTo(Boolean.FALSE);
+        if (!StringUtils.isEmpty(searchForm.getTitle())) {
+            criteria.andTitleLike(searchForm.getTitle());
+        }
+        if (!StringUtils.isEmpty(searchForm.getDescription())) {
+            criteria.andDescriptionLike(searchForm.getDescription());
+        }
+        if (!StringUtils.isEmpty(searchForm.getAuthor())) {
+            criteria.andAuthorEqualTo(searchForm.getAuthor());
+        }
+        if (searchForm.getType() != null) {
+            criteria.andTypeEqualTo(searchForm.getType());
+        }
+        if (searchForm.getStartTime() != null) {
+            criteria.andStartTimeGreaterThanOrEqualTo(searchForm.getStartTime());
+        }
+        if (searchForm.getEndTime() != null) {
+            criteria.andEndTimeLessThanOrEqualTo(searchForm.getEndTime());
+        }
+
+        // Setting page information
+        PageHelper.startPage(searchForm.getPageNum(), searchForm.getPageSize(), searchForm.getOrderBy());
         List<ActivityEntity> activityEntityList = activityEntityMapper.selectByExample(example);
         List<ActivityVO> activityVOList = new ArrayList<>(activityEntityList.size());
 
