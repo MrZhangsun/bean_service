@@ -18,7 +18,7 @@ public interface ActivityService {
      *
      * @param activity activity details
      */
-    void add(ActivityForm activity);
+    Integer add(ActivityForm activity);
 
     /**
      * Delete activity

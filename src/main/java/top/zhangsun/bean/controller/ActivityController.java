@@ -35,8 +35,8 @@ public class ActivityController {
      */
     @PostMapping(UrlMapping.ACTIVITIES)
     public ResultDTO createActivity(@RequestBody ActivityForm activityForm) {
-        activityService.add(activityForm);
-        return new ResultDTO().ok();
+        Integer add = activityService.add(activityForm);
+        return new ResultDTO<Integer>().ok(add);
     }
 
     /**
@@ -53,7 +53,7 @@ public class ActivityController {
                     HttpStatus.BAD_REQUEST.value());
         }
         activityService.update(activityForm);
-        return new ResultDTO().ok();
+        return new ResultDTO<Integer>().ok(id);
     }
 
     /**

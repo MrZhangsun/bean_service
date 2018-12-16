@@ -37,7 +37,7 @@ public class ActivityServiceImpl implements ActivityService {
      * @param activity activity details
      */
     @Override
-    public void add(ActivityForm activity) {
+    public Integer add(ActivityForm activity) {
         ActivityEntity activityEntity = new ActivityEntity();
 
         activityEntity.setTitle(activity.getTitle());
@@ -53,6 +53,7 @@ public class ActivityServiceImpl implements ActivityService {
         activityEntity.setUpdateTime(new Date());
         activityEntity.setDelete(Boolean.FALSE);
         activityEntityMapper.insert(activityEntity);
+        return activityEntity.getId();
     }
 
     /**

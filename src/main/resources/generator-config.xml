@@ -78,7 +78,7 @@
             enableDeleteByExample="true"
             enableSelectByExample="true"
             selectByExampleQueryId="true">
-            <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>
 </generatorConfiguration>
