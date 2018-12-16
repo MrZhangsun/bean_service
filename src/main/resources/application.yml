@@ -4,3 +4,7 @@ spring:
     username: xdm57692360
     password: Root1024
     driver-class-name: com.mysql.jdbc.Driver
+
+logging:
+  level:
+    top.zhangsun.bean.mapper : debug
