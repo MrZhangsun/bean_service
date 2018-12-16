@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://xdm57692360.my3w.com:3306/xdm57692360_db
+    username: xdm57692360
+    password: Root1024
+    driver-class-name: com.mysql.jdbc.Driver

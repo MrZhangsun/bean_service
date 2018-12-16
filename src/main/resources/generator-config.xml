@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="mysql" targetRuntime="MyBatis3" defaultModelType="flat">
+        <property name="autoDelimitKeywords" value="true"/>
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!-- 阻止生成自动注释 -->
+        <commentGenerator>
+            <property name="javaFileEncoding" value="UTF-8"/>
+            <property name="suppressDate" value="true"/>
+            <!-- 注释不能全干掉，不然每次xml文件都有重复内容 -->
+            <property name="suppressAllComments" value="false"/>
+        </commentGenerator>
+
+        <!--数据库链接地址账号密码-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://xdm57692360.my3w.com:3306/xdm57692360_db"
+                        userId="xdm57692360"
+                        password="Root1024">
+        </jdbcConnection>
+
+        <!--指定生成的类型为java类型，避免数据库中number等类型字段 -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!--自动生成的实体的存放包路径 -->
+        <javaModelGenerator targetPackage="top.zhangsun.bean.pojo.entity" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!--自动生成的*Mapper.xml文件存放路径 -->
+        <sqlMapGenerator targetPackage="top.zhangsun.bean.mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!--自动生成的*Mapper.java存放路径 -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="top.zhangsun.bean.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!-- Table Mapping-->
+        <table tableName="CHINA_SOFT_BEAN" domainObjectName="BeanEntity"
+            enableCountByExample="true"
+            enableUpdateByExample="true"
+            enableDeleteByExample="true"
+            enableSelectByExample="true"
+            selectByExampleQueryId="true">
+            <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
+        </table>
+
+        <table tableName="CHINA_SOFT_ACTIVITY" domainObjectName="ActivityEntity"
+            enableCountByExample="true"
+            enableUpdateByExample="true"
+            enableDeleteByExample="true"
+            enableSelectByExample="true"
+            selectByExampleQueryId="true">
+            <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
+        </table>
+
+        <table tableName="CHINA_SOFT_ACTIVITY_TYPE" domainObjectName="ActivityTypeEntity"
+            enableCountByExample="true"
+            enableUpdateByExample="true"
+            enableDeleteByExample="true"
+            enableSelectByExample="true"
+            selectByExampleQueryId="true">
+            <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
+        </table>
+
+        <table tableName="CHINA_SOFT_USER" domainObjectName="UserEntity"
+            enableCountByExample="true"
+            enableUpdateByExample="true"
+            enableDeleteByExample="true"
+            enableSelectByExample="true"
+            selectByExampleQueryId="true">
+            <generatedKey column="id" sqlStatement="JDBC" identity="true"/>
+        </table>
+    </context>
+</generatorConfiguration>
