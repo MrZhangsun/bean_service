@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import top.zhangsun.bean.exception.ClientException;
-import top.zhangsun.bean.mapper.ActivityEntityMapper;
 import top.zhangsun.bean.pojo.entity.ActivityEntity;
 import top.zhangsun.bean.pojo.entity.ActivityEntityExample;
 import top.zhangsun.bean.pojo.form.ActivityForm;

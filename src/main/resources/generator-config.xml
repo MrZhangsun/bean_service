@@ -18,9 +18,9 @@
 
         <!--数据库链接地址账号密码-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://xdm57692360.my3w.com:3306/xdm57692360_db"
-                        userId="xdm57692360"
-                        password="Root1024">
+                        connectionURL="jdbc:mysql://47.75.192.99:3306/china_soft"
+                        userId="chinaSofti"
+                        password="HiRookie1024!">
         </jdbcConnection>
 
         <!--指定生成的类型为java类型，避免数据库中number等类型字段 -->

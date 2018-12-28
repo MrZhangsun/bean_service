@@ -352,63 +352,73 @@ public class ActivityTypeEntityExample {
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountIsNull() {
-            addCriterion("bean_count is null");
+        public Criteria andDescriptionIsNull() {
+            addCriterion("description is null");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountIsNotNull() {
-            addCriterion("bean_count is not null");
+        public Criteria andDescriptionIsNotNull() {
+            addCriterion("description is not null");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountEqualTo(Integer value) {
-            addCriterion("bean_count =", value, "beanCount");
+        public Criteria andDescriptionEqualTo(String value) {
+            addCriterion("description =", value, "description");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountNotEqualTo(Integer value) {
-            addCriterion("bean_count <>", value, "beanCount");
+        public Criteria andDescriptionNotEqualTo(String value) {
+            addCriterion("description <>", value, "description");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountGreaterThan(Integer value) {
-            addCriterion("bean_count >", value, "beanCount");
+        public Criteria andDescriptionGreaterThan(String value) {
+            addCriterion("description >", value, "description");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountGreaterThanOrEqualTo(Integer value) {
-            addCriterion("bean_count >=", value, "beanCount");
+        public Criteria andDescriptionGreaterThanOrEqualTo(String value) {
+            addCriterion("description >=", value, "description");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountLessThan(Integer value) {
-            addCriterion("bean_count <", value, "beanCount");
+        public Criteria andDescriptionLessThan(String value) {
+            addCriterion("description <", value, "description");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountLessThanOrEqualTo(Integer value) {
-            addCriterion("bean_count <=", value, "beanCount");
+        public Criteria andDescriptionLessThanOrEqualTo(String value) {
+            addCriterion("description <=", value, "description");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountIn(List<Integer> values) {
-            addCriterion("bean_count in", values, "beanCount");
+        public Criteria andDescriptionLike(String value) {
+            addCriterion("description like", value, "description");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountNotIn(List<Integer> values) {
-            addCriterion("bean_count not in", values, "beanCount");
+        public Criteria andDescriptionNotLike(String value) {
+            addCriterion("description not like", value, "description");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountBetween(Integer value1, Integer value2) {
-            addCriterion("bean_count between", value1, value2, "beanCount");
+        public Criteria andDescriptionIn(List<String> values) {
+            addCriterion("description in", values, "description");
             return (Criteria) this;
         }
 
-        public Criteria andBeanCountNotBetween(Integer value1, Integer value2) {
-            addCriterion("bean_count not between", value1, value2, "beanCount");
+        public Criteria andDescriptionNotIn(List<String> values) {
+            addCriterion("description not in", values, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionBetween(String value1, String value2) {
+            addCriterion("description between", value1, value2, "description");
+            return (Criteria) this;
+        }
+
+        public Criteria andDescriptionNotBetween(String value1, String value2) {
+            addCriterion("description not between", value1, value2, "description");
             return (Criteria) this;
         }
 
@@ -532,63 +542,73 @@ public class ActivityTypeEntityExample {
             return (Criteria) this;
         }
 
-        public Criteria andDeleteIsNull() {
-            addCriterion("`delete` is null");
+        public Criteria andDeleteFlagIsNull() {
+            addCriterion("delete_flag is null");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteIsNotNull() {
-            addCriterion("`delete` is not null");
+        public Criteria andDeleteFlagIsNotNull() {
+            addCriterion("delete_flag is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteEqualTo(Boolean value) {
-            addCriterion("`delete` =", value, "delete");
+        public Criteria andDeleteFlagEqualTo(String value) {
+            addCriterion("delete_flag =", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteNotEqualTo(Boolean value) {
-            addCriterion("`delete` <>", value, "delete");
+        public Criteria andDeleteFlagNotEqualTo(String value) {
+            addCriterion("delete_flag <>", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteGreaterThan(Boolean value) {
-            addCriterion("`delete` >", value, "delete");
+        public Criteria andDeleteFlagGreaterThan(String value) {
+            addCriterion("delete_flag >", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteGreaterThanOrEqualTo(Boolean value) {
-            addCriterion("`delete` >=", value, "delete");
+        public Criteria andDeleteFlagGreaterThanOrEqualTo(String value) {
+            addCriterion("delete_flag >=", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteLessThan(Boolean value) {
-            addCriterion("`delete` <", value, "delete");
+        public Criteria andDeleteFlagLessThan(String value) {
+            addCriterion("delete_flag <", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteLessThanOrEqualTo(Boolean value) {
-            addCriterion("`delete` <=", value, "delete");
+        public Criteria andDeleteFlagLessThanOrEqualTo(String value) {
+            addCriterion("delete_flag <=", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteIn(List<Boolean> values) {
-            addCriterion("`delete` in", values, "delete");
+        public Criteria andDeleteFlagLike(String value) {
+            addCriterion("delete_flag like", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteNotIn(List<Boolean> values) {
-            addCriterion("`delete` not in", values, "delete");
+        public Criteria andDeleteFlagNotLike(String value) {
+            addCriterion("delete_flag not like", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteBetween(Boolean value1, Boolean value2) {
-            addCriterion("`delete` between", value1, value2, "delete");
+        public Criteria andDeleteFlagIn(List<String> values) {
+            addCriterion("delete_flag in", values, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteNotBetween(Boolean value1, Boolean value2) {
-            addCriterion("`delete` not between", value1, value2, "delete");
+        public Criteria andDeleteFlagNotIn(List<String> values) {
+            addCriterion("delete_flag not in", values, "deleteFlag");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeleteFlagBetween(String value1, String value2) {
+            addCriterion("delete_flag between", value1, value2, "deleteFlag");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeleteFlagNotBetween(String value1, String value2) {
+            addCriterion("delete_flag not between", value1, value2, "deleteFlag");
             return (Criteria) this;
         }
     }

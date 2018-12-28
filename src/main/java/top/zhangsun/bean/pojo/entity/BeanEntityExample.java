@@ -282,66 +282,6 @@ public class BeanEntityExample {
             return (Criteria) this;
         }
 
-        public Criteria andTypeIsNull() {
-            addCriterion("`type` is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeIsNotNull() {
-            addCriterion("`type` is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeEqualTo(Integer value) {
-            addCriterion("`type` =", value, "type");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeNotEqualTo(Integer value) {
-            addCriterion("`type` <>", value, "type");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeGreaterThan(Integer value) {
-            addCriterion("`type` >", value, "type");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeGreaterThanOrEqualTo(Integer value) {
-            addCriterion("`type` >=", value, "type");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeLessThan(Integer value) {
-            addCriterion("`type` <", value, "type");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeLessThanOrEqualTo(Integer value) {
-            addCriterion("`type` <=", value, "type");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeIn(List<Integer> values) {
-            addCriterion("`type` in", values, "type");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeNotIn(List<Integer> values) {
-            addCriterion("`type` not in", values, "type");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeBetween(Integer value1, Integer value2) {
-            addCriterion("`type` between", value1, value2, "type");
-            return (Criteria) this;
-        }
-
-        public Criteria andTypeNotBetween(Integer value1, Integer value2) {
-            addCriterion("`type` not between", value1, value2, "type");
-            return (Criteria) this;
-        }
-
         public Criteria andNameIsNull() {
             addCriterion("`name` is null");
             return (Criteria) this;
@@ -422,53 +362,123 @@ public class BeanEntityExample {
             return (Criteria) this;
         }
 
-        public Criteria andRateEqualTo(Float value) {
+        public Criteria andRateEqualTo(Double value) {
             addCriterion("rate =", value, "rate");
             return (Criteria) this;
         }
 
-        public Criteria andRateNotEqualTo(Float value) {
+        public Criteria andRateNotEqualTo(Double value) {
             addCriterion("rate <>", value, "rate");
             return (Criteria) this;
         }
 
-        public Criteria andRateGreaterThan(Float value) {
+        public Criteria andRateGreaterThan(Double value) {
             addCriterion("rate >", value, "rate");
             return (Criteria) this;
         }
 
-        public Criteria andRateGreaterThanOrEqualTo(Float value) {
+        public Criteria andRateGreaterThanOrEqualTo(Double value) {
             addCriterion("rate >=", value, "rate");
             return (Criteria) this;
         }
 
-        public Criteria andRateLessThan(Float value) {
+        public Criteria andRateLessThan(Double value) {
             addCriterion("rate <", value, "rate");
             return (Criteria) this;
         }
 
-        public Criteria andRateLessThanOrEqualTo(Float value) {
+        public Criteria andRateLessThanOrEqualTo(Double value) {
             addCriterion("rate <=", value, "rate");
             return (Criteria) this;
         }
 
-        public Criteria andRateIn(List<Float> values) {
+        public Criteria andRateIn(List<Double> values) {
             addCriterion("rate in", values, "rate");
             return (Criteria) this;
         }
 
-        public Criteria andRateNotIn(List<Float> values) {
+        public Criteria andRateNotIn(List<Double> values) {
             addCriterion("rate not in", values, "rate");
             return (Criteria) this;
         }
 
-        public Criteria andRateBetween(Float value1, Float value2) {
+        public Criteria andRateBetween(Double value1, Double value2) {
             addCriterion("rate between", value1, value2, "rate");
             return (Criteria) this;
         }
 
-        public Criteria andRateNotBetween(Float value1, Float value2) {
+        public Criteria andRateNotBetween(Double value1, Double value2) {
             addCriterion("rate not between", value1, value2, "rate");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoIsNull() {
+            addCriterion("logo is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoIsNotNull() {
+            addCriterion("logo is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoEqualTo(String value) {
+            addCriterion("logo =", value, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoNotEqualTo(String value) {
+            addCriterion("logo <>", value, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoGreaterThan(String value) {
+            addCriterion("logo >", value, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoGreaterThanOrEqualTo(String value) {
+            addCriterion("logo >=", value, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoLessThan(String value) {
+            addCriterion("logo <", value, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoLessThanOrEqualTo(String value) {
+            addCriterion("logo <=", value, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoLike(String value) {
+            addCriterion("logo like", value, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoNotLike(String value) {
+            addCriterion("logo not like", value, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoIn(List<String> values) {
+            addCriterion("logo in", values, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoNotIn(List<String> values) {
+            addCriterion("logo not in", values, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoBetween(String value1, String value2) {
+            addCriterion("logo between", value1, value2, "logo");
+            return (Criteria) this;
+        }
+
+        public Criteria andLogoNotBetween(String value1, String value2) {
+            addCriterion("logo not between", value1, value2, "logo");
             return (Criteria) this;
         }
 
@@ -542,63 +552,63 @@ public class BeanEntityExample {
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeIsNull() {
-            addCriterion("creae_time is null");
+        public Criteria andCreateTimeIsNull() {
+            addCriterion("create_time is null");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeIsNotNull() {
-            addCriterion("creae_time is not null");
+        public Criteria andCreateTimeIsNotNull() {
+            addCriterion("create_time is not null");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeEqualTo(Date value) {
-            addCriterionForJDBCDate("creae_time =", value, "creaeTime");
+        public Criteria andCreateTimeEqualTo(Date value) {
+            addCriterionForJDBCDate("create_time =", value, "createTime");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeNotEqualTo(Date value) {
-            addCriterionForJDBCDate("creae_time <>", value, "creaeTime");
+        public Criteria andCreateTimeNotEqualTo(Date value) {
+            addCriterionForJDBCDate("create_time <>", value, "createTime");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeGreaterThan(Date value) {
-            addCriterionForJDBCDate("creae_time >", value, "creaeTime");
+        public Criteria andCreateTimeGreaterThan(Date value) {
+            addCriterionForJDBCDate("create_time >", value, "createTime");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeGreaterThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("creae_time >=", value, "creaeTime");
+        public Criteria andCreateTimeGreaterThanOrEqualTo(Date value) {
+            addCriterionForJDBCDate("create_time >=", value, "createTime");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeLessThan(Date value) {
-            addCriterionForJDBCDate("creae_time <", value, "creaeTime");
+        public Criteria andCreateTimeLessThan(Date value) {
+            addCriterionForJDBCDate("create_time <", value, "createTime");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeLessThanOrEqualTo(Date value) {
-            addCriterionForJDBCDate("creae_time <=", value, "creaeTime");
+        public Criteria andCreateTimeLessThanOrEqualTo(Date value) {
+            addCriterionForJDBCDate("create_time <=", value, "createTime");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeIn(List<Date> values) {
-            addCriterionForJDBCDate("creae_time in", values, "creaeTime");
+        public Criteria andCreateTimeIn(List<Date> values) {
+            addCriterionForJDBCDate("create_time in", values, "createTime");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeNotIn(List<Date> values) {
-            addCriterionForJDBCDate("creae_time not in", values, "creaeTime");
+        public Criteria andCreateTimeNotIn(List<Date> values) {
+            addCriterionForJDBCDate("create_time not in", values, "createTime");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("creae_time between", value1, value2, "creaeTime");
+        public Criteria andCreateTimeBetween(Date value1, Date value2) {
+            addCriterionForJDBCDate("create_time between", value1, value2, "createTime");
             return (Criteria) this;
         }
 
-        public Criteria andCreaeTimeNotBetween(Date value1, Date value2) {
-            addCriterionForJDBCDate("creae_time not between", value1, value2, "creaeTime");
+        public Criteria andCreateTimeNotBetween(Date value1, Date value2) {
+            addCriterionForJDBCDate("create_time not between", value1, value2, "createTime");
             return (Criteria) this;
         }
 
@@ -662,63 +672,73 @@ public class BeanEntityExample {
             return (Criteria) this;
         }
 
-        public Criteria andDeleteIsNull() {
-            addCriterion("`delete` is null");
+        public Criteria andDeleteFlagIsNull() {
+            addCriterion("delete_flag is null");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteIsNotNull() {
-            addCriterion("`delete` is not null");
+        public Criteria andDeleteFlagIsNotNull() {
+            addCriterion("delete_flag is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteEqualTo(Boolean value) {
-            addCriterion("`delete` =", value, "delete");
+        public Criteria andDeleteFlagEqualTo(String value) {
+            addCriterion("delete_flag =", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteNotEqualTo(Boolean value) {
-            addCriterion("`delete` <>", value, "delete");
+        public Criteria andDeleteFlagNotEqualTo(String value) {
+            addCriterion("delete_flag <>", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteGreaterThan(Boolean value) {
-            addCriterion("`delete` >", value, "delete");
+        public Criteria andDeleteFlagGreaterThan(String value) {
+            addCriterion("delete_flag >", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteGreaterThanOrEqualTo(Boolean value) {
-            addCriterion("`delete` >=", value, "delete");
+        public Criteria andDeleteFlagGreaterThanOrEqualTo(String value) {
+            addCriterion("delete_flag >=", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteLessThan(Boolean value) {
-            addCriterion("`delete` <", value, "delete");
+        public Criteria andDeleteFlagLessThan(String value) {
+            addCriterion("delete_flag <", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteLessThanOrEqualTo(Boolean value) {
-            addCriterion("`delete` <=", value, "delete");
+        public Criteria andDeleteFlagLessThanOrEqualTo(String value) {
+            addCriterion("delete_flag <=", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteIn(List<Boolean> values) {
-            addCriterion("`delete` in", values, "delete");
+        public Criteria andDeleteFlagLike(String value) {
+            addCriterion("delete_flag like", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteNotIn(List<Boolean> values) {
-            addCriterion("`delete` not in", values, "delete");
+        public Criteria andDeleteFlagNotLike(String value) {
+            addCriterion("delete_flag not like", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteBetween(Boolean value1, Boolean value2) {
-            addCriterion("`delete` between", value1, value2, "delete");
+        public Criteria andDeleteFlagIn(List<String> values) {
+            addCriterion("delete_flag in", values, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteNotBetween(Boolean value1, Boolean value2) {
-            addCriterion("`delete` not between", value1, value2, "delete");
+        public Criteria andDeleteFlagNotIn(List<String> values) {
+            addCriterion("delete_flag not in", values, "deleteFlag");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeleteFlagBetween(String value1, String value2) {
+            addCriterion("delete_flag between", value1, value2, "deleteFlag");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeleteFlagNotBetween(String value1, String value2) {
+            addCriterion("delete_flag not between", value1, value2, "deleteFlag");
             return (Criteria) this;
         }
     }

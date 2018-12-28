@@ -482,63 +482,123 @@ public class ActivityEntityExample {
             return (Criteria) this;
         }
 
-        public Criteria andAuthorIsNull() {
-            addCriterion("author is null");
+        public Criteria andBeanIsNull() {
+            addCriterion("bean is null");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorIsNotNull() {
-            addCriterion("author is not null");
+        public Criteria andBeanIsNotNull() {
+            addCriterion("bean is not null");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorEqualTo(Integer value) {
-            addCriterion("author =", value, "author");
+        public Criteria andBeanEqualTo(Integer value) {
+            addCriterion("bean =", value, "bean");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorNotEqualTo(Integer value) {
-            addCriterion("author <>", value, "author");
+        public Criteria andBeanNotEqualTo(Integer value) {
+            addCriterion("bean <>", value, "bean");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorGreaterThan(Integer value) {
-            addCriterion("author >", value, "author");
+        public Criteria andBeanGreaterThan(Integer value) {
+            addCriterion("bean >", value, "bean");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorGreaterThanOrEqualTo(Integer value) {
-            addCriterion("author >=", value, "author");
+        public Criteria andBeanGreaterThanOrEqualTo(Integer value) {
+            addCriterion("bean >=", value, "bean");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorLessThan(Integer value) {
-            addCriterion("author <", value, "author");
+        public Criteria andBeanLessThan(Integer value) {
+            addCriterion("bean <", value, "bean");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorLessThanOrEqualTo(Integer value) {
-            addCriterion("author <=", value, "author");
+        public Criteria andBeanLessThanOrEqualTo(Integer value) {
+            addCriterion("bean <=", value, "bean");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorIn(List<Integer> values) {
-            addCriterion("author in", values, "author");
+        public Criteria andBeanIn(List<Integer> values) {
+            addCriterion("bean in", values, "bean");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorNotIn(List<Integer> values) {
-            addCriterion("author not in", values, "author");
+        public Criteria andBeanNotIn(List<Integer> values) {
+            addCriterion("bean not in", values, "bean");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorBetween(Integer value1, Integer value2) {
-            addCriterion("author between", value1, value2, "author");
+        public Criteria andBeanBetween(Integer value1, Integer value2) {
+            addCriterion("bean between", value1, value2, "bean");
             return (Criteria) this;
         }
 
-        public Criteria andAuthorNotBetween(Integer value1, Integer value2) {
-            addCriterion("author not between", value1, value2, "author");
+        public Criteria andBeanNotBetween(Integer value1, Integer value2) {
+            addCriterion("bean not between", value1, value2, "bean");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalIsNull() {
+            addCriterion("bean_total is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalIsNotNull() {
+            addCriterion("bean_total is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalEqualTo(Integer value) {
+            addCriterion("bean_total =", value, "beanTotal");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalNotEqualTo(Integer value) {
+            addCriterion("bean_total <>", value, "beanTotal");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalGreaterThan(Integer value) {
+            addCriterion("bean_total >", value, "beanTotal");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalGreaterThanOrEqualTo(Integer value) {
+            addCriterion("bean_total >=", value, "beanTotal");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalLessThan(Integer value) {
+            addCriterion("bean_total <", value, "beanTotal");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalLessThanOrEqualTo(Integer value) {
+            addCriterion("bean_total <=", value, "beanTotal");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalIn(List<Integer> values) {
+            addCriterion("bean_total in", values, "beanTotal");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalNotIn(List<Integer> values) {
+            addCriterion("bean_total not in", values, "beanTotal");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalBetween(Integer value1, Integer value2) {
+            addCriterion("bean_total between", value1, value2, "beanTotal");
+            return (Criteria) this;
+        }
+
+        public Criteria andBeanTotalNotBetween(Integer value1, Integer value2) {
+            addCriterion("bean_total not between", value1, value2, "beanTotal");
             return (Criteria) this;
         }
 
@@ -662,143 +722,123 @@ public class ActivityEntityExample {
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlIsNull() {
-            addCriterion("logo_url is null");
+        public Criteria andPublisherIsNull() {
+            addCriterion("publisher is null");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlIsNotNull() {
-            addCriterion("logo_url is not null");
+        public Criteria andPublisherIsNotNull() {
+            addCriterion("publisher is not null");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlEqualTo(String value) {
-            addCriterion("logo_url =", value, "logoUrl");
+        public Criteria andPublisherEqualTo(Integer value) {
+            addCriterion("publisher =", value, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlNotEqualTo(String value) {
-            addCriterion("logo_url <>", value, "logoUrl");
+        public Criteria andPublisherNotEqualTo(Integer value) {
+            addCriterion("publisher <>", value, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlGreaterThan(String value) {
-            addCriterion("logo_url >", value, "logoUrl");
+        public Criteria andPublisherGreaterThan(Integer value) {
+            addCriterion("publisher >", value, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlGreaterThanOrEqualTo(String value) {
-            addCriterion("logo_url >=", value, "logoUrl");
+        public Criteria andPublisherGreaterThanOrEqualTo(Integer value) {
+            addCriterion("publisher >=", value, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlLessThan(String value) {
-            addCriterion("logo_url <", value, "logoUrl");
+        public Criteria andPublisherLessThan(Integer value) {
+            addCriterion("publisher <", value, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlLessThanOrEqualTo(String value) {
-            addCriterion("logo_url <=", value, "logoUrl");
+        public Criteria andPublisherLessThanOrEqualTo(Integer value) {
+            addCriterion("publisher <=", value, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlLike(String value) {
-            addCriterion("logo_url like", value, "logoUrl");
+        public Criteria andPublisherIn(List<Integer> values) {
+            addCriterion("publisher in", values, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlNotLike(String value) {
-            addCriterion("logo_url not like", value, "logoUrl");
+        public Criteria andPublisherNotIn(List<Integer> values) {
+            addCriterion("publisher not in", values, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlIn(List<String> values) {
-            addCriterion("logo_url in", values, "logoUrl");
+        public Criteria andPublisherBetween(Integer value1, Integer value2) {
+            addCriterion("publisher between", value1, value2, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlNotIn(List<String> values) {
-            addCriterion("logo_url not in", values, "logoUrl");
+        public Criteria andPublisherNotBetween(Integer value1, Integer value2) {
+            addCriterion("publisher not between", value1, value2, "publisher");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlBetween(String value1, String value2) {
-            addCriterion("logo_url between", value1, value2, "logoUrl");
+        public Criteria andBossIsNull() {
+            addCriterion("boss is null");
             return (Criteria) this;
         }
 
-        public Criteria andLogoUrlNotBetween(String value1, String value2) {
-            addCriterion("logo_url not between", value1, value2, "logoUrl");
+        public Criteria andBossIsNotNull() {
+            addCriterion("boss is not null");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlIsNull() {
-            addCriterion("pics_url is null");
+        public Criteria andBossEqualTo(Integer value) {
+            addCriterion("boss =", value, "boss");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlIsNotNull() {
-            addCriterion("pics_url is not null");
+        public Criteria andBossNotEqualTo(Integer value) {
+            addCriterion("boss <>", value, "boss");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlEqualTo(String value) {
-            addCriterion("pics_url =", value, "picsUrl");
+        public Criteria andBossGreaterThan(Integer value) {
+            addCriterion("boss >", value, "boss");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlNotEqualTo(String value) {
-            addCriterion("pics_url <>", value, "picsUrl");
+        public Criteria andBossGreaterThanOrEqualTo(Integer value) {
+            addCriterion("boss >=", value, "boss");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlGreaterThan(String value) {
-            addCriterion("pics_url >", value, "picsUrl");
+        public Criteria andBossLessThan(Integer value) {
+            addCriterion("boss <", value, "boss");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlGreaterThanOrEqualTo(String value) {
-            addCriterion("pics_url >=", value, "picsUrl");
+        public Criteria andBossLessThanOrEqualTo(Integer value) {
+            addCriterion("boss <=", value, "boss");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlLessThan(String value) {
-            addCriterion("pics_url <", value, "picsUrl");
+        public Criteria andBossIn(List<Integer> values) {
+            addCriterion("boss in", values, "boss");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlLessThanOrEqualTo(String value) {
-            addCriterion("pics_url <=", value, "picsUrl");
+        public Criteria andBossNotIn(List<Integer> values) {
+            addCriterion("boss not in", values, "boss");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlLike(String value) {
-            addCriterion("pics_url like", value, "picsUrl");
+        public Criteria andBossBetween(Integer value1, Integer value2) {
+            addCriterion("boss between", value1, value2, "boss");
             return (Criteria) this;
         }
 
-        public Criteria andPicsUrlNotLike(String value) {
-            addCriterion("pics_url not like", value, "picsUrl");
-            return (Criteria) this;
-        }
-
-        public Criteria andPicsUrlIn(List<String> values) {
-            addCriterion("pics_url in", values, "picsUrl");
-            return (Criteria) this;
-        }
-
-        public Criteria andPicsUrlNotIn(List<String> values) {
-            addCriterion("pics_url not in", values, "picsUrl");
-            return (Criteria) this;
-        }
-
-        public Criteria andPicsUrlBetween(String value1, String value2) {
-            addCriterion("pics_url between", value1, value2, "picsUrl");
-            return (Criteria) this;
-        }
-
-        public Criteria andPicsUrlNotBetween(String value1, String value2) {
-            addCriterion("pics_url not between", value1, value2, "picsUrl");
+        public Criteria andBossNotBetween(Integer value1, Integer value2) {
+            addCriterion("boss not between", value1, value2, "boss");
             return (Criteria) this;
         }
 
@@ -922,63 +962,73 @@ public class ActivityEntityExample {
             return (Criteria) this;
         }
 
-        public Criteria andDeleteIsNull() {
-            addCriterion("`delete` is null");
+        public Criteria andDeleteFlagIsNull() {
+            addCriterion("delete_flag is null");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteIsNotNull() {
-            addCriterion("`delete` is not null");
+        public Criteria andDeleteFlagIsNotNull() {
+            addCriterion("delete_flag is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteEqualTo(Boolean value) {
-            addCriterion("`delete` =", value, "delete");
+        public Criteria andDeleteFlagEqualTo(String value) {
+            addCriterion("delete_flag =", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteNotEqualTo(Boolean value) {
-            addCriterion("`delete` <>", value, "delete");
+        public Criteria andDeleteFlagNotEqualTo(String value) {
+            addCriterion("delete_flag <>", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteGreaterThan(Boolean value) {
-            addCriterion("`delete` >", value, "delete");
+        public Criteria andDeleteFlagGreaterThan(String value) {
+            addCriterion("delete_flag >", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteGreaterThanOrEqualTo(Boolean value) {
-            addCriterion("`delete` >=", value, "delete");
+        public Criteria andDeleteFlagGreaterThanOrEqualTo(String value) {
+            addCriterion("delete_flag >=", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteLessThan(Boolean value) {
-            addCriterion("`delete` <", value, "delete");
+        public Criteria andDeleteFlagLessThan(String value) {
+            addCriterion("delete_flag <", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteLessThanOrEqualTo(Boolean value) {
-            addCriterion("`delete` <=", value, "delete");
+        public Criteria andDeleteFlagLessThanOrEqualTo(String value) {
+            addCriterion("delete_flag <=", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteIn(List<Boolean> values) {
-            addCriterion("`delete` in", values, "delete");
+        public Criteria andDeleteFlagLike(String value) {
+            addCriterion("delete_flag like", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteNotIn(List<Boolean> values) {
-            addCriterion("`delete` not in", values, "delete");
+        public Criteria andDeleteFlagNotLike(String value) {
+            addCriterion("delete_flag not like", value, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteBetween(Boolean value1, Boolean value2) {
-            addCriterion("`delete` between", value1, value2, "delete");
+        public Criteria andDeleteFlagIn(List<String> values) {
+            addCriterion("delete_flag in", values, "deleteFlag");
             return (Criteria) this;
         }
 
-        public Criteria andDeleteNotBetween(Boolean value1, Boolean value2) {
-            addCriterion("`delete` not between", value1, value2, "delete");
+        public Criteria andDeleteFlagNotIn(List<String> values) {
+            addCriterion("delete_flag not in", values, "deleteFlag");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeleteFlagBetween(String value1, String value2) {
+            addCriterion("delete_flag between", value1, value2, "deleteFlag");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeleteFlagNotBetween(String value1, String value2) {
+            addCriterion("delete_flag not between", value1, value2, "deleteFlag");
             return (Criteria) this;
         }
     }
