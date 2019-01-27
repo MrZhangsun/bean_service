@@ -29,15 +29,16 @@ public class ActivityForm {
 
     private Integer author;
 
+    private Integer bean;
+
+    private Integer boss;
+
+    @JsonProperty("bean_total")
+    private Integer beanTotal;
+
     @JsonProperty("start_time")
     private Date startTime;
 
     @JsonProperty("end_time")
     private Date endTime;
-
-    @JsonProperty("logo_url")
-    private String logoUrl;
-
-    @JsonProperty("pics_url")
-    private String picsUrl;
 }

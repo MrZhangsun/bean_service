@@ -29,15 +29,16 @@ public class ActivityVO {
 
     private Integer author;
 
+    private Integer bean;
+
+    @JsonProperty("bean_total")
+    private Integer beanTotal;
+
+    private Integer boss;
+
     @JsonProperty("start_time")
     private Date startTime;
 
     @JsonProperty("end_time")
     private Date endTime;
-
-    @JsonProperty("logo_url")
-    private String logoUrl;
-
-    @JsonProperty("pics_url")
-    private String picsUrl;
 }

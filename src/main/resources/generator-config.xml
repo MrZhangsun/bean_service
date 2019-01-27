@@ -18,7 +18,7 @@
 
         <!--数据库链接地址账号密码-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://47.75.192.99:3306/china_soft"
+                        connectionURL="jdbc:mysql://47.52.197.157:3306/china_soft"
                         userId="chinaSofti"
                         password="HiRookie1024!">
         </jdbcConnection>

@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import top.zhangsun.bean.enums.DeleteEnum;
 import top.zhangsun.bean.exception.ClientException;
+import top.zhangsun.bean.mapper.ActivityEntityMapper;
 import top.zhangsun.bean.pojo.entity.ActivityEntity;
 import top.zhangsun.bean.pojo.entity.ActivityEntityExample;
 import top.zhangsun.bean.pojo.form.ActivityForm;
@@ -44,16 +46,16 @@ public class ActivityServiceImpl implements ActivityService {
 
         activityEntity.setTitle(activity.getTitle());
         activityEntity.setDescription(activity.getDescription());
-        activityEntity.setAuthor(activity.getAuthor());
+        activityEntity.setPublisher(activity.getAuthor());
+        activityEntity.setBoss(activity.getBoss());
         activityEntity.setType(activity.getType());
-        activityEntity.setLogoUrl(activity.getLogoUrl());
-        activityEntity.setPicsUrl(activity.getPicsUrl());
         activityEntity.setStartTime(activity.getStartTime());
         activityEntity.setEndTime(activity.getEndTime());
-
+        activityEntity.setBean(activity.getBean());
+        activityEntity.setBeanTotal(activity.getBeanTotal());
         activityEntity.setCreateTime(new Date());
         activityEntity.setUpdateTime(new Date());
-        activityEntity.setDelete(Boolean.FALSE);
+        activityEntity.setDeleteFlag(DeleteEnum.N.name());
         activityEntityMapper.insert(activityEntity);
         return activityEntity.getId();
     }
@@ -70,7 +72,7 @@ public class ActivityServiceImpl implements ActivityService {
         }
         ActivityEntity activityEntity = new ActivityEntity();
         activityEntity.setId(id);
-        activityEntity.setDelete(Boolean.TRUE);
+        activityEntity.setDeleteFlag(DeleteEnum.N.name());
         activityEntityMapper.updateByPrimaryKeySelective(activityEntity);
     }
 
@@ -89,10 +91,8 @@ public class ActivityServiceImpl implements ActivityService {
         activityEntity.setId(activity.getId());
         activityEntity.setTitle(activity.getTitle());
         activityEntity.setDescription(activity.getDescription());
-        activityEntity.setAuthor(activity.getAuthor());
+        activityEntity.setPublisher(activity.getAuthor());
         activityEntity.setType(activity.getType());
-        activityEntity.setLogoUrl(activity.getLogoUrl());
-        activityEntity.setPicsUrl(activity.getPicsUrl());
         activityEntity.setStartTime(activity.getStartTime());
         activityEntity.setEndTime(activity.getEndTime());
 
@@ -108,7 +108,7 @@ public class ActivityServiceImpl implements ActivityService {
     public List<ActivityVO> findAll(ActivitySearchForm searchForm) {
         ActivityEntityExample example = new ActivityEntityExample();
         ActivityEntityExample.Criteria criteria = example.createCriteria();
-        criteria.andDeleteEqualTo(Boolean.FALSE);
+        criteria.andDeleteFlagEqualTo(DeleteEnum.N.name());
         if (!StringUtils.isEmpty(searchForm.getTitle())) {
             criteria.andTitleLike(searchForm.getTitle());
         }
@@ -116,7 +116,7 @@ public class ActivityServiceImpl implements ActivityService {
             criteria.andDescriptionLike(searchForm.getDescription());
         }
         if (!StringUtils.isEmpty(searchForm.getAuthor())) {
-            criteria.andAuthorEqualTo(searchForm.getAuthor());
+            criteria.andPublisherEqualTo(searchForm.getAuthor());
         }
         if (searchForm.getType() != null) {
             criteria.andTypeEqualTo(searchForm.getType());
@@ -134,7 +134,7 @@ public class ActivityServiceImpl implements ActivityService {
         List<ActivityVO> activityVOList = new ArrayList<>(activityEntityList.size());
 
         activityEntityList.forEach(item -> activityVOList.add(new ActivityVO(item.getId(), item.getTitle(), item.getDescription(), item.getType(),
-                item.getAuthor(), item.getStartTime(), item.getEndTime(), item.getLogoUrl(), item.getPicsUrl())));
+                item.getPublisher(), item.getBean(), item.getBeanTotal(), item.getBoss(), item.getStartTime(), item.getEndTime())));
 
         return activityVOList;
     }

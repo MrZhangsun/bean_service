@@ -33,6 +33,10 @@ public class ActivitySearchForm {
 
     private Integer author;
 
+    private Integer boss;
+
+    private Integer bean;
+
     @JsonProperty("start_time")
     private Date startTime;
 
